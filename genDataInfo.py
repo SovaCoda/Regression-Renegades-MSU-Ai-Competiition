@@ -25,7 +25,6 @@ SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 credentials = Credentials.from_authorized_user_file("token.json", SCOPES)
 service = build('drive', 'v3', credentials=credentials)
 
-
 def find_folder_id(folder_name):
     query = f"mimeType='application/vnd.google-apps.folder' and name='{folder_name}' and trashed=false"
     results = service.files().list(q=query, fields="files(id, name)").execute()

@@ -5,6 +5,7 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 # from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
+from datetime import datetime
 
 # # If modifying these scopes, delete the file token.json.
 # SCOPES = ["https://www.googleapis.com/auth/drive.metadata.readonly"]
@@ -160,12 +161,14 @@ def main():
         # Calculate totals
         total_row = df.sum(numeric_only=True).to_frame().T
         df = pd.concat([df, total_row], ignore_index=True)
-
+        
+        now = datetime.now()
+        dt_string = now.strftime("%d_%m_%Y_%H_%M")
         # Save to Excel
-        df.to_excel('building_image_counts.xlsx', index=False)
-        apply_color_scale('building_image_counts.xlsx')
+        df.to_excel(f'DataReports/building_image_counts_{dt_string}.xlsx', index=False)
+        apply_color_scale(f'DataReports/building_image_counts_{dt_string}.xlsx')
 
-        print(f'Excel file "building_image_counts.xlsx" has been created.')
+        print(f'Excel file "building_image_counts_{dt_string}.xlsx" has been created.')
 
 if __name__ == '__main__':
     main()

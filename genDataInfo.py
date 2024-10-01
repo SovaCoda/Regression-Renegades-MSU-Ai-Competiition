@@ -112,7 +112,7 @@ def apply_color_scale(filename):
         start_type='min',
         start_color='FF0000',  # Red
         mid_type='percentile',        # Adjust this value as needed
-        mid_value=50,
+        mid_value=15,
         mid_color='FFFF00',     # Yellow
         end_type='max',
         end_color='00FF00'      # Green

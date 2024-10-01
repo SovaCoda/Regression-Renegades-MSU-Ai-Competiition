@@ -109,7 +109,8 @@ def apply_color_scale(filename):
     
     # Apply 3-color scale to the second column (Total Images)
     color_scale = ColorScaleRule(
-        start_type='min',
+        start_type='num',
+        start_value=200,
         start_color='FF0000',  # Red
         mid_type='percentile',        # Adjust this value as needed
         mid_value=15,

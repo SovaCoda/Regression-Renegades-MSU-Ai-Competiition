@@ -1,4 +1,4 @@
-torch==2.4.1+cu124
+torch==2.4.1
 torchvision==0.19.1
 scikit-learn==1.5.2
 seaborn==0.13.2

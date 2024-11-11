@@ -62,7 +62,7 @@ F1 Score: 0.9388
 * More information can be found in the model training process section
 
 ### Result reporting
-* The best model was kept and its accuracy and scores were rerported along with the testing set confusion matrix
+* The best model was kept and its accuracy and scores were reported along with the testing set confusion matrix
 
 ## Model Training Process
 * For every epoch the model continuously approved accross both metrics
@@ -103,10 +103,10 @@ F1 Score: 0.8270
 
 ## Challenges Encountered
 ### Swalm vs Lee
-* An interesting challenge that appeared was that in an early model the images of Swalm Hall and Lee Hall were easily mislabeled. This is understandable due to the buildings being nearly identical apart from their sorroundings.
+* An interesting challenge that appeared was that in an early model the images of Swalm Hall and Lee Hall were easily mislabeled. This is understandable due to the buildings being nearly identical apart from their surroundings.
 <img width="300" src="https://github.com/user-attachments/assets/56aa9426-4e17-41ff-8299-3ccf8f528f40">
 
-* The problem was solved by adding wider images of the buildings to the data set to help the model process its sorrounding. A larger volume of images in the training set probably contributed to solving the problem as well.
+* The problem was solved by adding wider images of the buildings to the data set to help the model process its surrounding. A larger volume of images in the training set probably contributed to solving the problem as well.
 
 * An alternative solution that was considered but eventually not implemented was the creation of a very selective second layer of a model that focused only on labeling images between Swalm and Lee.
   

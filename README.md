@@ -1,5 +1,8 @@
 # Team Info
-
+**Regression Renegades**
+* Conner Bell (chb263)
+* Kacy Crothers (klc990)
+* Joseph Sorrell (jrs1455)
 # Instructions
 ## How to Run
 ```

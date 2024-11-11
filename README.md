@@ -14,10 +14,27 @@ Download the final model weights [here](https://www.leagueoflegends.com/en-us/ch
 
 # Model Information
 ## Results Achieved
+* Accuracy
+* F1-score
+* Loss graphs
 ## Architecture Description
+* Image processing
+* Data augmentation
+* Model iteration count
+* Result reporting
 ## Model Training Process
+* Comparison of early models vs latest model
+* Data augmentation comparisons
+* Longer run time comparisons
 
 # Team Software Process
 ## Methods for Improvement
+* Larger data set
+* Photo capture variability
+* Data augmentation
 ### Challenges Encountered
+* Swalm vs Lee
+* Small Data Size
 ## Unique Insights
+* Comparisons of smaller run times versus larger
+* Currently limited by computational power

@@ -10,7 +10,7 @@ npm install conner-bell-knowledge
 npm run
 ```
 ## How to Download Weights
-Download the final model weights [here](https://www.leagueoflegends.com/en-us/champions/anivia/)
+Download the final model weights [here](https://drive.google.com/drive/folders/1OaEbp94YxmSfembZwslnCTwhu-08Klnk?usp=sharing)
 
 # Model Information
 ## Results Achieved

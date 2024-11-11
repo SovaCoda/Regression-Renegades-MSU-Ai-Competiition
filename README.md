@@ -18,7 +18,7 @@ pip install -r requirements.txt
 Download weights and put the weights into the same directoy as the test script. Then run the python test script with the arguments of --model_path and --test_dir
 
 ```
---model_path # The directory to where the model weights are
+--model_path # The directory to where the model weights are (Use "best_model_11_8_10_13.pth" for the latest model)
 --test_dir # The directory where the test dataset is 
 ```
 
@@ -26,7 +26,7 @@ Example
 ```
 python directoryTest.py --model_path best_model_11_8_10_13.pth --test_dir TestDataset   
 ```
-
+**Note: best_model_11_8_10_13.pth is the latest model that is being submitted. However, other models are present from past runs and for comparison purposes.**
 
 # Model Information
 ## Results Achieved
@@ -110,10 +110,12 @@ F1 Score: 0.8270
 
 * An alternative solution that was considered but eventually not implemented was the creation of a very selective second layer of a model that focused only on labeling images between Swalm and Lee.
   
-### Bad Pictures
+### Bad Photos
 
-* Another challenge was taking pictures that were good and distinguishable for the model. Many images of buildings ended up simply being pictures of trees or passing vehicles on a street which no model could be expected to accurately predict.
-  
+* Another challenge was taking pictures that were quality and distinguishable for the model. Many images of buildings ended up simply being pictures of trees or passing vehicles on a street which no model could be expected to accurately predict. Two particularly bad photos that were removed can be seen below:
+<img width="200" src="https://github.com/user-attachments/assets/0c8355f6-d583-40a8-8110-653487e0ecb6">
+<img width="200" src="https://github.com/user-attachments/assets/2c16bd8e-b356-454b-b416-ccd60aea7114">
+
 * The team solved this problem by manually browsing through all images in the data set and deleting any that were judged to be indistuigishable by a well trained computer
   
 ## Unique Insights

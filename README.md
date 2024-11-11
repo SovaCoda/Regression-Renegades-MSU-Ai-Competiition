@@ -4,13 +4,29 @@
 * Kacy Crothers (klc990)
 * Joseph Sorrell (jrs1455)
 # Instructions
-## How to Run
-```
-npm install conner-bell-knowledge
-npm run
-```
+
 ## How to Download Weights
 Download the final model weights [here](https://drive.google.com/drive/folders/1OaEbp94YxmSfembZwslnCTwhu-08Klnk?usp=sharing)
+
+## How to Run
+Clone the repository then install the requirements
+```
+pip install -r requirements.txt
+```
+
+
+Download weights and put the weights into the same directoy as the test script. Then run the python test script with the arguments of --model_path and --test_dir
+
+```
+--model_path # The directory to where the model weights are
+--test_dir # The directory where the test dataset is 
+```
+
+Example
+```
+python directoryTest.py --model_path best_model_11_8_10_13.pth --test_dir TestDataset   
+```
+
 
 # Model Information
 ## Results Achieved

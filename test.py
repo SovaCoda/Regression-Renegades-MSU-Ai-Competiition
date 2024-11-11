@@ -15,13 +15,12 @@ num_classes = 10  # Set the number of classes to match your trained model
 model.fc = torch.nn.Linear(model.fc.in_features, num_classes)
 
 # Load the trained weights
-model.load_state_dict(torch.load('best_model.pth'))  # Load the trained weights
+model.load_state_dict(torch.load('best_model_11_8_10_13.pth'))  # Load the trained weights
 model.eval()  # Set the model to evaluation mode
 
 # Define the image transformation pipeline
 transform = transforms.Compose([
-    transforms.Resize(256),  # Resize the image to 256x256
-    transforms.CenterCrop(224),  # Crop the center to 224x224 (the input size of ResNet-18)
+    transforms.Resize([224,224]),  # Resize the image to 256x256
     transforms.ToTensor(),  # Convert the image to a tensor
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])  # Normalize
 ])
